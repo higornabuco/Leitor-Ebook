@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import '../models/book_model.dart';
 import '../services/book_services.dart';
+import 'package:vocsy_epub_viewer/epub_viewer.dart';
 
 class BookDetailPage extends StatefulWidget {
   final BookModel book;
@@ -28,8 +29,6 @@ class _BookDetailPageState extends State<BookDetailPage> {
         children: [
           GestureDetector(
             onTap: () {
-              // Adicione lógica para iniciar a leitura do livro
-              // (não implementado aqui)
             },
             child: CachedNetworkImage(
               imageUrl: widget.book.coverUrl,
